@@ -2,29 +2,37 @@
     margin: 0;
     padding: 0;
 }
-.wrapper{
+body {
+    background-image: URL('pozadi.jpg'); 
+    background-attachment: fixed;
+    background-color: black; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+} 
+.wrapper { 
+    margin: 5%;
+    width: 90%;
+    height: 90%;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    background-color: rgb(170, 203, 216);
 }
-.nav, .content{
+.head, .nav {
     display: inline-block;
-    height: 80%;
+    height: 10%;
     position: relative;
 }
-.nav{
+.head{
     width: 20%;
 }
-.content{
-    width: 78%;
+.nav{
+    width: 70%;
 }
-.header, .footer{
+.content {
+    top: 25%;
+    height: 75%;
+    width: 90%;
+}
+.footer {
     height: 10%;
-}
-.header{
-    position: absolute;
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: coral
-    
+    width: 90%;
 }
