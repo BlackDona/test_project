@@ -26,7 +26,7 @@ body {
     display: inline-block;
     height: 10%;
     position: relative;
-    flex: 1 1 60%;
+    flex: 1 1 50%;
 }
 .head{
     flex-basis: auto;
@@ -47,9 +47,14 @@ body {
 .flexbox{
     display: flex;
 }
-@media screen and (max-width: 760px){
+@media only screen and (max-width: 600px){
     .hidden{
         display: none;
+    }
+}
+@media only screen and (max-width: 890px){
+    .nav{
+        display: grid;
     }
 }
 .hidden{
@@ -59,4 +64,8 @@ body {
     text-align: end;
     position: sticky;
     top: 10%;
+}
+.a{
+    color: lightsteelblue;
+    text-decoration: none;
 }
