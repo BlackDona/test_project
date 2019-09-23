@@ -3,15 +3,16 @@
     padding: 0;
 }
 @font-face{
-    font-family: font_tucny;
-    src: url(font_tucny.ttf);
+    font-family: font;
+    src: url(sharp_tucny.ttf);
 }
 body {
     background-image: URL('pozadi.jpg'); 
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-size: cover;
-    font-family: font_tucny;
+    font-family: font;
+    color: lightsteelblue;
 } 
 .wrapper { 
     margin: 5%;
@@ -30,8 +31,8 @@ body {
 .head{
     flex-basis: auto;
     text-transform: uppercase;
-    font-size: 35px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 900;
     text-align: center;
 }
 .content {
@@ -46,13 +47,13 @@ body {
 .flexbox{
     display: flex;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 760px){
     .hidden{
         display: none;
     }
 }
 .hidden{
-    font-size: 30px;
+    font-size: 25px;
 }
 .nav{
     text-align: end;
