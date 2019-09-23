@@ -20,12 +20,11 @@ body {
     display: inline-block;
     height: 10%;
     position: relative;
+    flex: 1 1 65%;
 }
 .head{
-    width: 20%;
-}
-.nav{
-    width: 70%;
+    flex-basis: auto;
+    text-transform: uppercase;
 }
 .content {
     top: 25%;
@@ -35,4 +34,12 @@ body {
 .footer {
     height: 10%;
     width: 90%;
+}
+.flexbox{
+    display: flex;
+}
+@media screen and (max-width: 600px){
+    .hidden{
+        display: none;
+    }
 }
