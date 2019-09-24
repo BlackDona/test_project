@@ -39,6 +39,7 @@ body {
 }
 .head span{
     font-size: 30px; 
+    color: brown;
 }
 .content {
     top: 25%;
@@ -66,6 +67,7 @@ body {
     max-width: 0;
     opacity: 0;
     transition: 0.5s ease-in;
+    color: lightsteelblue;
 }
 .nav{
     text-align: end;
@@ -80,4 +82,8 @@ a{
 .head:hover .hidden{
     opacity: 1;
     max-width: 1em;
+}
+
+.nav a:hover{
+    color: brown;
 }
