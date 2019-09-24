@@ -29,10 +29,13 @@ body {
 }
 .head{
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 0; /* kvůli display: inline-block ve spanech vznikají divné mezery, nastavením na 0 tady se jich zbavíš */
     font-weight: 900;
     text-align: center;
     width: 45%;
+}
+.head span{
+    font-size: 30px;
 }
 .content {
     top: 25%;
@@ -53,7 +56,7 @@ body {
         display: inline-grid;
     }
 }
-.hidden{
+.head span.hidden{
     font-size: 25px;
     overflow: hidden;
     max-width: 0;
