@@ -38,17 +38,21 @@ body {
 
 }
 .head span{
-    font-size: 30px; 
+    font-size: 35px; 
     color: brown;
 }
 .content {
     top: 25%;
-    height: 76%;
+    height: 85%;
     width: 90%;
 }
 .footer {
-    height: 9%;
+    height: 5%;
     width: 90%;
+    font-size: 13px;
+    justify-content: center;
+    color: brown;
+    display: flex;
 }
 
 @media only screen and (max-width: 970px){
