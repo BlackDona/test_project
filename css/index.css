@@ -4,10 +4,10 @@
 }
 @font-face{
     font-family: font;
-    src: url(sharp_tucny.ttf);
+    src: url("../fonts/sharp_tucny.ttf");
 }
 body {
-    background-image: URL('pozadi.jpg'); 
+    background-image: URL('../img/pozadi.jpg'); 
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-size: cover;
