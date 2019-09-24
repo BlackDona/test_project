@@ -24,37 +24,33 @@ body {
 }
 .head, .nav {
     display: inline-block;
-    height: 10%;
+    height: 7%;
     position: relative;
-    flex: 1 1 50%;
 }
 .head{
-    flex-basis: auto;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 900;
     text-align: center;
+    width: 45%;
 }
 .content {
     top: 25%;
-    height: 75%;
+    height: 76%;
     width: 90%;
 }
 .footer {
-    height: 10%;
+    height: 9%;
     width: 90%;
 }
-.flexbox{
-    display: flex;
-}
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 666px){
     .hidden{
         display: none;
     }
 }
-@media only screen and (max-width: 890px){
+@media only screen and (max-width: 970px){
     .nav{
-        display: grid;
+        display: inline-grid;
     }
 }
 .hidden{
@@ -62,8 +58,8 @@ body {
 }
 .nav{
     text-align: end;
-    position: sticky;
-    top: 10%;
+    position: initial;
+    width: 53%;
 }
 a{
     color: lightsteelblue;
