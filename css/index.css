@@ -26,13 +26,16 @@ body {
     display: inline-block;
     height: 7%;
     position: relative;
+    line-height: 50px;
 }
 .head{
     text-transform: uppercase;
     font-size: 0; /* kvůli display: inline-block ve spanech vznikají divné mezery, nastavením na 0 tady se jich zbavíš */
     font-weight: 900;
-    text-align: center;
-    width: 45%;
+    text-align: left;
+    width: 35%;
+    left: 16px;
+
 }
 .head span{
     font-size: 30px;
@@ -46,14 +49,13 @@ body {
     height: 9%;
     width: 90%;
 }
-@media only screen and (max-width: 666px){
-    .hidden{
-        display: none;
-    }
-}
+
 @media only screen and (max-width: 970px){
     .nav{
-        display: inline-grid;
+        display: flex;
+    }
+    .head{
+        width: 60%;
     }
 }
 .head span.hidden{
@@ -68,11 +70,12 @@ body {
 .nav{
     text-align: end;
     position: initial;
-    width: 53%;
+    width: 63%;
 }
 a{
     color: lightsteelblue;
     text-decoration: none;
+    padding: 0 5px;
 }
 .head:hover .hidden{
     opacity: 1;
