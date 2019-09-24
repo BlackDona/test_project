@@ -30,12 +30,16 @@ body {
 }
 .head{
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 0;
     font-weight: 900;
     text-align: left;
-    width: 35%;
+    width: 25%;
     left: 16px;
 
+}
+.head span{
+    font-size: 30px; 
+    color: brown;
 }
 .content {
     top: 25%;
@@ -55,7 +59,7 @@ body {
         width: 60%;
     }
 }
-.hidden{
+.head span.hidden{
     display: inline-block;
     transform: translateY(30%);
     font-size: 25px;
@@ -63,11 +67,12 @@ body {
     max-width: 0;
     opacity: 0;
     transition: 0.5s ease-in;
+    color: lightsteelblue;
 }
 .nav{
     text-align: end;
     position: initial;
-    width: 63%;
+    width: 73%;
 }
 a{
     color: lightsteelblue;
@@ -77,4 +82,8 @@ a{
 .head:hover .hidden{
     opacity: 1;
     max-width: 1em;
+}
+
+.nav a:hover{
+    color: brown;
 }
