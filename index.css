@@ -51,7 +51,6 @@ body {
     top: 25%;
     height: 75%;
     width: 90%;
-    flex-grow: 1 1;
 }
 .footer {
     height: 10%;
@@ -116,10 +115,15 @@ a{
     min-width: 40%;
 }
 .cardtitle{
+    list-style-position: inside;
+}
+.cardtitle span{
     font-family: fonttucny;
     font-size: 26px;
+    margin-bottom: 40%;
 }
 .cardtitle li{
     font-family: font;
     font-size: 16px;
+    margin-bottom: 25px;
 }
