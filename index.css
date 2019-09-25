@@ -10,6 +10,10 @@
     font-family: font;
     src: url(sharp.ttf)
 }
+@font-face{
+    font-family: fonttext;
+    src: url(galette.otf)
+}
 body {
     background-image: URL('pozadi.jpg'); 
     background-attachment: fixed;
@@ -24,7 +28,7 @@ body {
     height: 90%;
     position: absolute;
     background-color: rgb(26, 46, 54);
-    border-radius: 25px;
+    border-radius: 15px;
 }
 .head, .nav {
     display: inline-block;
@@ -105,7 +109,7 @@ a{
 .card1, .card2{
     margin: 2%;
     position: relative;
-    display: inline-flex;
+    display: inline-grid;
     background-color: lightsteelblue;
     color: rgb(26, 46, 54);
     text-align: center;
@@ -117,13 +121,14 @@ a{
 .cardtitle{
     list-style-position: inside;
 }
-.cardtitle span{
+.cardmenu{
     font-family: fonttucny;
     font-size: 26px;
-    margin-bottom: 40%;
+    margin: 25px 0px;
 }
 .cardtitle li{
-    font-family: font;
+    font-family: fonttext;
     font-size: 16px;
     margin-bottom: 25px;
+    font-weight: 900;
 }
