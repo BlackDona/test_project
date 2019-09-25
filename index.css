@@ -46,10 +46,12 @@ body {
     color: brown;
 }
 .content {
+    display: flex;
     margin: 2% 5%;
     top: 25%;
     height: 75%;
     width: 90%;
+    flex-grow: 1 1;
 }
 .footer {
     height: 10%;
@@ -101,21 +103,23 @@ a{
     font-size: 26px;
     height: 10%;
 }
-.table1, .table2{
+.card1, .card2{
     margin: 2%;
-    position: inherit;
-    display: inline-block;
+    position: relative;
+    display: inline-flex;
     background-color: lightsteelblue;
     color: rgb(26, 46, 54);
     text-align: center;
-    font-size: 16px;
-    font-family: font;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: black 4px 6px 20px;
-    max-width: 45%;
-    list-style-type: circle;    
+    max-width: 95%; 
+    min-width: 40%;
 }
-.tabletitle{
+.cardtitle{
     font-family: fonttucny;
     font-size: 26px;
+}
+.cardtitle li{
+    font-family: font;
+    font-size: 16px;
 }
