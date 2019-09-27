@@ -126,9 +126,7 @@ a{
     min-width: 300px;
     height: 115%;
 }
-.cardtitle{
-    list-style-position: inside;
-}
+
 .cardmenu{
     font-family: fonttitle;
     font-size: 26px;
@@ -139,16 +137,48 @@ a{
     font-size: 16px;
     margin-bottom: 25px;
     font-weight: 900;
+    list-style-position: inside;
 }
-.contact-wrapper{
+.back-wrapper{
     margin: 2% 5%;
     position: relative;
     display: contents;
 }
 .back{
-    background-image: URL('/Pict/office.jpg'); 
+    background-image: URL('/Pict/pozadi-kontakt.jpg'); 
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-size: cover;
     height: 450px;
+}
+.contact{
+    background-color: rgba(26, 46, 54, 0.6);
+    display: inline-block;
+    margin: 5%;
+    height: 205px;
+    width: 400px;
+    font-family: fonttext;
+}
+.contact-title{
+    text-transform: uppercase; 
+    font-size: 27px;
+    margin: 2% 5%;
+}
+.contact-wrapper{
+    display: flex;
+    margin: 3% 5%;
+    font-size: 17px;
+}
+.middle1 li, .middle2 li{
+    list-style-type: none;
+    margin: 2%;
+}
+.middle1{
+    width: 30%;
+}
+.middle2{
+    width: 50%;
+}
+.contact a{
+    margin: 0 5%;
 }
