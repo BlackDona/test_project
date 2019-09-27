@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html, body{
+    height: 100%;
+}
 @font-face{
     font-family: fonttucny;
     src: url(sharp_tucny.ttf);
@@ -23,9 +26,9 @@ body {
     color: lightsteelblue;
 } 
 .wrapper { 
-    margin: 5%;
+    margin: 0 5%;
     width: 90%;
-    height: 90%;
+    min-height: 100%;
     position: absolute;
     background-color: rgb(26, 46, 54);
     border-radius: 15px;
@@ -57,12 +60,12 @@ body {
     width: 90%;
 }
 .footer {
-    height: 10%;
-    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
     font-size: 13px;
-    justify-content: center;
     color: brown;
-    display: flex;
 }
 
 @media only screen and (max-width: 970px){
@@ -106,17 +109,22 @@ a{
     font-size: 26px;
     height: 10%;
 }
-.card1, .card2{
+.card-wrapper{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.card{
+    flex: 1 1 auto;
     margin: 2%;
-    position: relative;
-    display: inline-grid;
     background-color: lightsteelblue;
     color: rgb(26, 46, 54);
     text-align: center;
     border-radius: 5px;
     box-shadow: black 4px 6px 20px;
-    max-width: 95%; 
-    min-width: 40%;
+    max-width: 600px; 
+    min-width: 350px;
+    height: 115%;
 }
 .cardtitle{
     list-style-position: inside;
