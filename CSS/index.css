@@ -140,7 +140,6 @@ a{
     list-style-position: inside;
 }
 .back-wrapper{
-    margin: 2% 5%;
     position: relative;
     display: contents;
 }
@@ -152,7 +151,7 @@ a{
     height: 450px;
 }
 .contact{
-    background-color: rgba(26, 46, 54, 0.6);
+    background-color: rgba(26, 46, 54, 0.7);
     display: inline-block;
     margin: 5%;
     height: 205px;
