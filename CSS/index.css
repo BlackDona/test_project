@@ -7,11 +7,11 @@ html, body{
 }
 @font-face{
     font-family: fonttitle;
-    src: url(/Fonty/sharp_tucny.ttf);
+    src: url(/Fonts/sharp_tucny.ttf);
 }
 @font-face{
     font-family: fonttext;
-    src: url(/Fonty/galette.otf)
+    src: url(/Fonts/galette.otf)
 }
 body {
     background-image: URL('/Pict/pozadi.jpg'); 
@@ -104,7 +104,7 @@ a{
 .nav a:hover{
     color: brown;
 }
-.title{
+.contenttitle{
     text-align: center;
     font-size: 26px;
     height: 10%;
@@ -123,7 +123,7 @@ a{
     border-radius: 5px;
     box-shadow: black 4px 6px 20px;
     max-width: 600px; 
-    min-width: 350px;
+    min-width: 300px;
     height: 115%;
 }
 .cardtitle{
@@ -139,4 +139,16 @@ a{
     font-size: 16px;
     margin-bottom: 25px;
     font-weight: 900;
+}
+.contact-wrapper{
+    margin: 2% 5%;
+    position: relative;
+    display: contents;
+}
+.back{
+    background-image: URL('/Pict/office.jpg'); 
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 450px;
 }
