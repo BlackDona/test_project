@@ -6,24 +6,20 @@ html, body{
     height: 100%;
 }
 @font-face{
-    font-family: fonttucny;
-    src: url(sharp_tucny.ttf);
-}
-@font-face{
-    font-family: font;
-    src: url(sharp.ttf)
+    font-family: fonttitle;
+    src: url(/Fonty/sharp_tucny.ttf);
 }
 @font-face{
     font-family: fonttext;
-    src: url(galette.otf)
+    src: url(/Fonty/galette.otf)
 }
 body {
-    background-image: URL('pozadi.jpg'); 
+    background-image: URL('/Pict/pozadi.jpg'); 
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-size: cover;
-    font-family: fonttucny;
     color: lightsteelblue;
+    font-family: fonttitle;
 } 
 .wrapper { 
     margin: 0 5%;
@@ -32,6 +28,7 @@ body {
     position: absolute;
     background-color: rgb(26, 46, 54);
     border-radius: 15px;
+    
 }
 .head, .nav {
     display: inline-block;
@@ -133,7 +130,7 @@ a{
     list-style-position: inside;
 }
 .cardmenu{
-    font-family: fonttucny;
+    font-family: fonttitle;
     font-size: 26px;
     margin: 25px 0px;
 }
