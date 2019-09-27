@@ -75,6 +75,9 @@ body {
     .head{
         width: 60%;
     }
+    .card{
+        max-height: 45%;
+    }
 }
 .head span.hidden{
     display: inline-block;
