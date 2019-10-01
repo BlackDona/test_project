@@ -1,6 +1,4 @@
-1) "mìøení a reguace" do hlavièky
-2) odkazy z class="cardtitle"
-3) nìjaké obrázkové pozadí do Úvodní obrazovky (buï pøímo pozadí nebo jako pozadí konkrétních karet)
+
 4) jako jedna možnost menu bude "technologie" s kterou pracujeme
 5) další odkaz v menu "reference"
 6) v odkazu reference pøidat tlaèítka na další možnosti (bazénové technologie, VZT, øešení chytrých domù, ...) pod kterými 

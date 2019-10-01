@@ -31,8 +31,6 @@ body {
     min-height: 100%;
     position: absolute;
     background-color: rgb(26, 46, 54);
-    border-radius: 15px;
-    
 }
 .head, .nav {
     display: inline-block;
@@ -66,9 +64,8 @@ body {
 }
 .content {
     display: flex;
+    position: fixed;
     margin: 2% 5%;
-    top: 25%;
-    height: 75%;
     width: 90%;
 }
 .footer {
@@ -87,10 +84,14 @@ body {
     .head{
         width: 60%;
     }
-    .card{
-        max-height: 45%;
+    .content{
+        position: relative;
+    }
+    .back-content{
+        background-image: none !important;
     }
 }
+
 .head span.hidden{
     display: inline-block;
     transform: translateY(30%);
@@ -121,6 +122,17 @@ a{
 .nav a:hover{
     color: brown;
 }
+.back-content{
+    background-color: rgb(26, 46, 54);
+    background-image: URL('/Pict/pozadi-uvod.png'); 
+    background-attachment: inherit;
+    background-repeat: no-repeat; 
+    background-size: 40%;
+    background-position: right bottom;
+    background-origin: padding-box;
+    min-height: 500px;
+    margin: 2%;
+}
 .contenttitle{
     text-align: center;
     font-size: 26px;
@@ -128,33 +140,46 @@ a{
 }
 .card-wrapper{
     display: flex;
-    width: 100%;
+    width: 500px;
     flex-wrap: wrap;
 }
 .card{
     flex: 1 1 auto;
-    margin: 2%;
-    background-color: lightsteelblue;
+    background-color: rgba(176, 196, 222, 0.8);
     color: rgb(26, 46, 54);
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: black 4px 6px 20px;
+    text-align: left;
     max-width: 600px; 
     min-width: 300px;
-    height: 115%;
 }
 
 .cardmenu{
     font-family: fonttitle;
-    font-size: 26px;
-    margin: 25px 0px;
+    font-size: 25px;
+    margin: 15px 0px;
+}
+.cardtitle{
+    margin: 0 5%;
 }
 .cardtitle li{
     font-family: fonttext;
     font-size: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-weight: 900;
     list-style-position: inside;
+}
+.choice{
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+.choice a{
+    color: lightsteelblue;
+    background-color: rgb(26, 46, 54);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: black 3px 3px 9px; 
+}
+.choice a:hover{
+    color: brown;
 }
 .back-wrapper{
     position: relative;
@@ -165,8 +190,8 @@ a{
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-size: cover;
-    height: 450px;
-    margin: 10px;
+    min-height: 500px;
+    margin: 20px 0;
 }
 .contact{
     background-color: rgba(26, 46, 54, 0.7);
