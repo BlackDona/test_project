@@ -123,15 +123,18 @@ a{
     color: brown;
 }
 .back-content{
-    background-color: rgb(26, 46, 54);
-    background-image: URL('/Pict/pozadi-uvod.png'); 
+    background-image: URL('/Pict/pozadi-uvod.jpg'); 
     background-attachment: inherit;
     background-repeat: no-repeat; 
-    background-size: 30%;
-    background-position: right bottom;
-    background-origin: padding-box;
+    background-size: cover;
     min-height: 500px;
-    margin: 2%;
+    margin: 20px 0;
+}
+.shadow{
+    background-color: rgba(26, 46, 54, 0.8);
+    display: block;
+    height: 500px;
+    width: 100%;
 }
 .contenttitle{
     text-align: center;
@@ -145,7 +148,7 @@ a{
 }
 .card{
     flex: 1 1 auto;
-    background-color: rgba(176, 196, 222, 0.8);
+    background-color: rgba(176, 196, 222, 0.6);
     color: rgb(26, 46, 54);
     text-align: left;
     max-width: 600px; 
@@ -154,7 +157,7 @@ a{
 
 .cardmenu{
     font-family: fonttitle;
-    font-size: 25px;
+    font-size: 24px;
     margin: 15px 0px;
 }
 .cardtitle{
@@ -174,7 +177,7 @@ a{
 .choice a{
     color: lightsteelblue;
     background-color: rgb(26, 46, 54);
-    padding: 10px;
+    padding: 9px;
     border-radius: 5px;
     box-shadow: black 3px 3px 9px; 
 }
