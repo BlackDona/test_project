@@ -127,7 +127,7 @@ a{
     background-image: URL('/Pict/pozadi-uvod.png'); 
     background-attachment: inherit;
     background-repeat: no-repeat; 
-    background-size: 40%;
+    background-size: 30%;
     background-position: right bottom;
     background-origin: padding-box;
     min-height: 500px;
@@ -187,40 +187,39 @@ a{
 }
 .back{
     background-image: URL('/Pict/pozadi-kontakt.jpg'); 
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-repeat: no-repeat; 
     background-size: cover;
     min-height: 500px;
     margin: 20px 0;
 }
 .contact{
-    background-color: rgba(26, 46, 54, 0.7);
+    background-color: rgba(26, 46, 54, 0.6);
     display: inline-block;
-    margin: 5%;
-    height: 205px;
-    width: 400px;
+    height: 500px;
+    width: 100%;
     font-family: fonttext;
 }
 .contact-title{
     text-transform: uppercase; 
     font-size: 27px;
-    margin: 2% 5%;
+    margin: 5% 7% 2% 7%;
 }
 .contact-wrapper{
     display: flex;
-    margin: 3% 5%;
+    margin: 0% 7%;
     font-size: 17px;
 }
 .middle1 li, .middle2 li{
     list-style-type: none;
-    margin: 2%;
+    margin: 3%;
 }
 .middle1{
-    width: 30%;
+    width: 115px;
 }
 .middle2{
-    width: 50%;
+    width: 200px;
 }
 .contact a{
-    margin: 0 5%;
+    margin: 0 7%;
 }
