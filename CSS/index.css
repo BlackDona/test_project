@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-html, body{
-    height: 100%;
-}
 @font-face{
     font-family: font;
     src: url(/Fonts/sharp.ttf);
@@ -17,13 +14,17 @@ html, body{
     font-family: fonttext;
     src: url(/Fonts/galette.otf)
 }
+html, body{
+    height: 100%;
+}
 body {
     background-image: URL('/Pict/pozadi.jpg'); 
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-size: cover;
     color: lightsteelblue;
-    font-family: fonttitle;
+    font-family: fonttext;
+    text-transform: uppercase;
 } 
 .wrapper { 
     margin: 0 5%;
@@ -37,13 +38,13 @@ body {
     height: 10%;
     position: relative;
     line-height: 50px;
+    font-family: fonttitle;
 }
 .head{
-    text-transform: uppercase;
     font-size: 0;
     font-weight: 900;
     text-align: left;
-    width: 25%;
+    width: 35%;
     left: 20px;
 }
 .head li{
@@ -54,11 +55,10 @@ body {
     display: grid;
 }
 .head span{
-    font-size: 40px; 
-    color: brown;
+    font-size: 50px; 
 }
 .note{
-    font-size: 12px;
+    font-size: 15px;
     font-family: font;
     font-weight: 100;
 }
@@ -87,12 +87,22 @@ body {
     .content{
         position: relative;
     }
+    .tech-wrapper{
+        display: block !important;
+    }
+    .tech{
+        min-width: 425px;
+        min-height: 110px;   
+        margin: 0px auto !important;
+    }
 }
-
+.cardtitle li, .tech-wrapper{
+    text-transform: lowercase;
+}
 .head span.hidden{
     display: inline-block;
-    transform: translateY(30%);
-    font-size: 25px;
+    transform: translateY(25%);
+    font-size: 35px;
     overflow: hidden;
     max-width: 0;
     opacity: 0;
@@ -101,26 +111,28 @@ body {
 }
 .nav{
     text-align: end;
-    position: initial;
-    width: 73%;
+    position: sticky;
+    left: 55%;
+    margin: 0 2%;
 }
 a{
     color: lightsteelblue;
     text-decoration: none;
 }
+.head span, .footer, a:hover, .choice a:hover, .active{
+    color: brown;
+}
 .nav a{
-    padding: 0 5px;
+    margin: 0 5px;
 }
 .head:hover .hidden{
     opacity: 1;
     max-width: 1em;
 }
-
-.nav a:hover{
-    color: brown;
-}
 .back-content{
-    background-image: URL('/Pict/pozadi-uvod.jpg'); 
+    background-image: URL('/Pict/pozadi-uvod.jpg');   
+}
+.back, .back-content, .back-tech{
     background-attachment: inherit;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -139,8 +151,10 @@ a{
     height: 10%;
 }
 .card-wrapper{
+    width: 500px; 
+}
+.card-wrapper, .tech-wrapper{
     display: flex;
-    width: 500px;
     flex-wrap: wrap;
 }
 .card{
@@ -153,16 +167,15 @@ a{
 }
 
 .cardmenu{
-    font-family: fonttitle;
     font-size: 24px;
     margin: 15px 0px;
+    font-weight: 900;
 }
 .cardtitle{
     margin: 0 5%;
 }
 .cardtitle li{
-    font-family: fonttext;
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 15px;
     font-weight: 900;
     list-style-position: inside;
@@ -174,12 +187,9 @@ a{
 .choice a{
     color: lightsteelblue;
     background-color: rgb(26, 46, 54);
-    padding: 9px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 4px;
     box-shadow: black 3px 3px 9px; 
-}
-.choice a:hover{
-    color: brown;
 }
 .back-wrapper{
     position: relative;
@@ -187,21 +197,14 @@ a{
 }
 .back{
     background-image: URL('/Pict/pozadi-kontakt.jpg'); 
-    background-attachment: inherit;
-    background-repeat: no-repeat; 
-    background-size: cover;
-    min-height: 500px;
-    margin: 20px 0;
 }
 .contact{
     background-color: rgba(26, 46, 54, 0.6);
     display: inline-block;
     height: 500px;
     width: 100%;
-    font-family: fonttext;
 }
 .contact-title{
-    text-transform: uppercase; 
     font-size: 27px;
     margin: 5% 7% 2% 7%;
 }
@@ -209,6 +212,7 @@ a{
     display: flex;
     margin: 0% 7%;
     font-size: 17px;
+    text-transform: none;
 }
 .middle1 li, .middle2 li{
     list-style-type: none;
@@ -225,17 +229,39 @@ a{
 }
 .back-tech{
     background-image: URL('/Pict/geometric.jpg'); 
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-size: cover;
-    min-height: 500px;
-    margin: 20px 0;
 }
 .shadow-tech{
-    background-color: rgba(26, 46, 54, 0.85);
+    background-color: rgba(26, 46, 54, 0.8);
     display: inline-block;
-    height: 500px;
     width: 100%;
-    font-family: fonttext;
+    min-height: 500px;
 }
+.rubric-title{
+    margin: 3% 5%;
+    font-size: 25px;
+    text-align: center;
+}
+.tech li{
+    list-style-type: none;
+}
+.tech-wrapper{
+    align-items: stretch;
+    min-height: 130px;
+}
+.tech{
+    flex: 1 1 auto;
+    position: relative;
+    margin: 0 2%;
+    text-align: center;
+    background-color: rgba(26, 46, 54, 0.7);
+    width: 25%;
+    font-size: 17px;
+}
+.tech ul{
+    margin: 5%;
+}
+.tech li{
+    margin: 3% 0;
+}
+
 

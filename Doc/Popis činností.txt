@@ -7,17 +7,15 @@ Obory èinnosti všeobecnì
   - programování dispeèinkù a vizualizací pro PC
 
 HW a SW 
-- typy používaných volnì programovatelných øídících jednotek a regulátorù
-  - AMiT - pro použití v tuzemsku preferujeme pøístroje od èeské firmy, která je
-    jedna z nejvìtších v ÈR a jejíž sortiment pokryje požadavky od nejmenších až
-    po rozsáhlé øídící ùlohy
+- Dodavatelé volnì programovatelných øídících jednotek a regulátorù
+  - AMiT - nejvìtší èeský výrobce øídicích systémù a elektroniky pro prùmyslovou automatizaci
   - WAGO - spolehlivé pøístroje od svìtoznámé a zavedené firmy, urèené pro støední
            a velké aplikace
   - Weintek - výrobce spolehlivých a odolných ovládacích panelù (touchscreenù)
-- programy pro tvorbu vizualizací a dispeèinkù
-  - Control Web verze 2000, 5, 6, 8
-  - Promotic
- -AutoCont - prùmyslová PC a touchscreeny
+- Používané programy pro tvorbu vizualizací a dispeèinkù
+  - Control Web - prùmyslová automatizace a øídící øešení
+  - Promotic - vizualizace technologických procesù
+  -AutoCont - programování systému a touchscreenù
   
 - obory èinností pro RD
   - analýzy a návrhy úspor a optimalizací vytápìní a vìtrání
