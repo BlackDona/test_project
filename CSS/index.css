@@ -87,6 +87,14 @@ body {
     .content{
         position: relative;
     }
+    .tech-wrapper{
+        display: block !important;
+    }
+    .tech{
+        min-width: 425px;
+        min-height: 110px;   
+        margin: 0px auto !important;
+    }
 }
 
 .head span.hidden{
@@ -139,8 +147,10 @@ a{
     height: 10%;
 }
 .card-wrapper{
+    width: 500px; 
+}
+.card-wrapper, .tech-wrapper{
     display: flex;
-    width: 500px;
     flex-wrap: wrap;
 }
 .card{
@@ -225,17 +235,46 @@ a{
 }
 .back-tech{
     background-image: URL('/Pict/geometric.jpg'); 
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-repeat: no-repeat; 
     background-size: cover;
     min-height: 500px;
     margin: 20px 0;
 }
 .shadow-tech{
-    background-color: rgba(26, 46, 54, 0.85);
+    background-color: rgba(26, 46, 54, 0.8);
     display: inline-block;
-    height: 500px;
     width: 100%;
     font-family: fonttext;
+    min-height: 500px;
 }
+.rubric-title{
+    margin: 3%;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.tech li{
+    list-style-type: none;
+}
+.tech-wrapper{
+    align-items: stretch;
+    min-height: 130px;
+}
+.tech{
+    flex: 1 1 auto;
+    position: relative;
+    margin: 0 2%;
+    text-align: center;
+    background-color: rgba(26, 46, 54, 0.7);
+    width: 25%;
+    font-size: 17px;
+}
+.tech ul{
+    margin: 5%;
+}
+.tech li{
+    margin: 3% 0;
+}
+
 
