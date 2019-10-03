@@ -64,17 +64,17 @@ body {
 }
 .content {
     display: flex;
-    position: fixed;
+    position: absolute;
     margin: 2% 5%;
     width: 90%;
 }
 .footer {
-    position: absolute;
+    position: relative;
     bottom: 10px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    text-align: center;
     font-size: 13px;
     color: brown;
+    font-family: fonttitle;
 }
 
 @media only screen and (max-width: 970px){
@@ -86,9 +86,6 @@ body {
     }
     .content{
         position: relative;
-    }
-    .back-content{
-        background-image: none !important;
     }
 }
 
@@ -226,3 +223,19 @@ a{
 .contact a{
     margin: 0 7%;
 }
+.back-tech{
+    background-image: URL('/Pict/geometric.jpg'); 
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    min-height: 500px;
+    margin: 20px 0;
+}
+.shadow-tech{
+    background-color: rgba(26, 46, 54, 0.85);
+    display: inline-block;
+    height: 500px;
+    width: 100%;
+    font-family: fonttext;
+}
+
