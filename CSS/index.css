@@ -44,11 +44,10 @@ body {
     font-size: 0;
     font-weight: 900;
     text-align: left;
-    width: 35%;
+    width: 30%;
     left: 20px;
 }
 .head li{
-    list-style-type: none;
     height: 35px;
 }
 .head ul{
@@ -77,7 +76,7 @@ body {
     font-family: fonttitle;
 }
 
-@media only screen and (max-width: 970px){
+@media only screen and (max-width: 1000px){
     .nav{
         display: flex;
     }
@@ -96,8 +95,8 @@ body {
         margin: 0px auto !important;
     }
 }
-.cardtitle li, .tech-wrapper{
-    text-transform: lowercase;
+.cardtitle li, .tech-wrapper, .contact-wrapper{
+    text-transform: none;
 }
 .head span.hidden{
     display: inline-block;
@@ -113,7 +112,7 @@ body {
     text-align: end;
     position: sticky;
     left: 55%;
-    margin: 0 2%;
+    margin: 0 1%;
 }
 a{
     color: lightsteelblue;
@@ -210,12 +209,13 @@ a{
 }
 .contact-wrapper{
     display: flex;
-    margin: 0% 7%;
+    margin: 1% 7%;
     font-size: 17px;
-    text-transform: none;
 }
-.middle1 li, .middle2 li{
+.middle1 li,.middle2 li,.head li,.tech li{
     list-style-type: none;
+}
+.middle1 .middle2{
     margin: 3%;
 }
 .middle1{
@@ -228,7 +228,7 @@ a{
     margin: 0 7%;
 }
 .back-tech{
-    background-image: URL('/Pict/geometric.jpg'); 
+    background-image: URL('/Pict/pozadi-tech.jpg'); 
 }
 .shadow-tech{
     background-color: rgba(26, 46, 54, 0.8);
@@ -240,9 +240,6 @@ a{
     margin: 3% 5%;
     font-size: 25px;
     text-align: center;
-}
-.tech li{
-    list-style-type: none;
 }
 .tech-wrapper{
     align-items: stretch;
@@ -262,6 +259,12 @@ a{
 }
 .tech li{
     margin: 3% 0;
+}
+.tech img:hover, .contact img:hover{
+    transform:scale(1.1);
+}
+.tech img, .contact img{
+    transition: transform 0.3s ease-out;
 }
 
 
