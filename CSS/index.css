@@ -46,6 +46,7 @@ body {
     text-align: left;
     width: 30%;
     left: 20px;
+    font-family: fonttitle;
 }
 .head li{
     height: 35px;
@@ -73,7 +74,7 @@ body {
     text-align: center;
     font-size: 13px;
     color: brown;
-    font-family: fonttitle;
+    font-family: font;
 }
 
 @media only screen and (max-width: 1000px){
@@ -113,6 +114,8 @@ body {
     position: sticky;
     left: 55%;
     margin: 0 1%;
+    font-family: font;
+    font-weight: 100;
 }
 a{
     color: lightsteelblue;
@@ -131,18 +134,20 @@ a{
 .back-content{
     background-image: URL('/Pict/pozadi-uvod.jpg');   
 }
-.back, .back-content, .back-tech{
+.back, .back-content, .back-tech, .back-corp, .back-rd{
     background-attachment: inherit;
     background-repeat: no-repeat; 
     background-size: cover;
     min-height: 500px;
     margin: 20px 0;
 }
+.shadow, .contact, .shadow-tech, .shadow-corp, .shadow-rd{
+    height: 500px;
+    width: 100%;
+}
 .shadow{
     background-color: rgba(26, 46, 54, 0.8);
     display: block;
-    height: 500px;
-    width: 100%;
 }
 .contenttitle{
     text-align: center;
@@ -200,8 +205,6 @@ a{
 .contact{
     background-color: rgba(26, 46, 54, 0.6);
     display: inline-block;
-    height: 500px;
-    width: 100%;
 }
 .contact-title{
     font-size: 27px;
@@ -232,9 +235,7 @@ a{
 }
 .shadow-tech{
     background-color: rgba(26, 46, 54, 0.8);
-    display: inline-block;
-    width: 100%;
-    min-height: 500px;
+    display: inline-table;
 }
 .rubric-title{
     margin: 3% 5%;
@@ -266,5 +267,22 @@ a{
 .tech img, .contact img{
     transition: transform 0.3s ease-out;
 }
+.back-corp{
+    background-image: url(/Pict/pozadi-firmy.jpg);
+}
+.shadow-corp{
+    background-color: rgba(26, 46, 54, 0.5);
+    display: block;
+}
+
+.back-rd{
+    background-image: url(/Pict/pozadi-rd.jpg);
+}
+.shadow-rd{
+    background-color: rgba(26, 46, 54, 0.8);
+    display: block;
+}
+
+
 
 
