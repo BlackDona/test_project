@@ -95,8 +95,12 @@ body {
         min-height: 110px;   
         margin: 0px auto !important;
     }
+    .figure{
+        min-width: 90%;
+        margin: 2% 5% !important;
+    }
 }
-.cardtitle li, .tech-wrapper, .contact-wrapper{
+.cardtitle li, .tech-wrapper, .contact-wrapper, .figure-content{
     text-transform: none;
 }
 .head span.hidden{
@@ -271,10 +275,9 @@ a{
     background-image: url(/Pict/pozadi-firmy.jpg);
 }
 .shadow-corp{
-    background-color: rgba(26, 46, 54, 0.5);
+    background-color: rgba(26, 46, 54, 0.6);
     display: block;
 }
-
 .back-rd{
     background-image: url(/Pict/pozadi-rd.jpg);
 }
@@ -282,6 +285,29 @@ a{
     background-color: rgba(26, 46, 54, 0.8);
     display: block;
 }
+.figure{
+    display: block;
+    position: absolute;
+    background-color: rgba(26, 46, 54, 0.8);
+    margin: 2% 16%;
+    width: 68%;
+    min-height: 50%;
+}
+.figure-title{
+    font-size: 27px;
+    text-align: center;
+    margin: 2% 5%;
+}
+.figure-content{
+    font-size: 18px;
+    margin: 2% 5%;
+}
+.event{
+    margin: 0 3%;
+}
+
+
+
 
 
 
