@@ -18,11 +18,6 @@ HW a SW
   -AutoCont - programování systému a touchscreenù
   
 - obory èinností pro RD
-  - analýzy a návrhy úspor a optimalizací vytápìní a vìtrání
-    specializace na øešení provozu nìkolika zdrojù tepla 
-    - optimalizace provozu kotlù na tuhá paliva
-  - øízení bazénových technologií a whirlpool
-
  - analýzy a návrhy úspor a optimalizací vytápìní a vìtrání
     - øízení systémù vytápìní dle potøeby jednotlivých místností a optimalizace
       požadavkù na zdroje tepla
