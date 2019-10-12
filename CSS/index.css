@@ -315,7 +315,42 @@ a{
 
 
 
-
+.hamburger{
+    display:block;
+    width:50px;
+    height:50px;
+    border-radius:5px;
+    border: 2px solid black;
+  }
+  .line{
+    display:block;
+    width:40px;
+    border: 2px solid black;
+    border-radius: 2px;
+    height:1px;
+    position:relative;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transition: .25s;
+  }
+  .top{
+    top:10px;
+  }
+  .middle{
+    top:20px;
+  }
+  .bottom{
+    top:30px;
+  }
+  .hamburger.active .top{
+    transform:translate(-50%,12.5px) rotate(45deg);
+  }
+  .hamburger.active .middle{
+    display:none;
+  }
+  .hamburger.active .bottom{
+    transform:translate(-50%,-12.5px) rotate(-45deg);
+  }
 
 
 
