@@ -14,6 +14,36 @@
     font-family: fonttext;
     src: url(/Fonts/galette.otf)
 }
+@media only screen and (max-width: 1090px){
+    .head{
+        margin: 5px;
+    }
+    .nav{
+        left: 0 !important;
+        margin: 0 !important;
+    }
+    .tech-wrapper{
+        display: block !important;
+    }
+    .tech{
+        min-width: 425px;
+        min-height: 110px;   
+        margin: 0px auto !important;
+    }
+    .figure, .content{
+        min-width: 90%;
+        margin: 0 5% !important;
+    }
+    .figure-content, .content ul, .contact-wrapper {
+        font-size: 17px !important;
+    }
+}
+@media only screen and (max-width: 675px){
+    .wrapper { 
+        margin: 0;
+        width: 100%;
+    }
+}
 html, body{
     height: 100%;
 }
@@ -33,77 +63,61 @@ body {
     position: absolute;
     background-color: rgb(26, 46, 54);
 }
-.head, .nav {
-    display: inline-block;
-    height: 10%;
-    position: relative;
-    line-height: 50px;
-    font-family: fonttitle;
+.header {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap; 
+    margin: 0 0 15px 15px;
 }
 .head{
     font-size: 0;
     font-weight: 900;
     text-align: left;
-    width: 30%;
-    left: 20px;
-    font-family: fonttitle;
-}
-.head li{
-    height: 35px;
-}
-.head ul{
-    display: grid;
+    width: 300px;
 }
 .head span{
     font-size: 50px; 
 }
-.note{
-    font-size: 15px;
-    font-family: font;
-    font-weight: 100;
+.head1{
+    font-family: fonttitle;
+    height: 50px;
 }
-.content {
-    display: flex;
-    position: absolute;
-    margin: 0 5%;
-    width: 90%;
+.head2{
+    font-size: 15px;
+    font-weight: 100;
+    font-family: font;
 }
 .footer {
     position: relative;
-    bottom: 10px;
-    text-align: center;
     font-size: 13px;
-    color: brown;
     font-family: font;
+    background-color: rgb(26, 46, 54);
+    margin: 15px;
+}
+.content li{
+    list-style-position: inside;
+    margin-bottom: 15px;
+}
+.footer,
+.content ul,
+.tech,
+.figure-title,
+.tech-title,
+.choice{
+    text-align: center;
 }
 
-@media only screen and (max-width: 1000px){
-    .nav{
-        display: flex;
-    }
-    .head{
-        width: 60%;
-    }
-    .tech-wrapper{
-        display: block !important;
-    }
-    .tech{
-        min-width: 425px;
-        min-height: 110px;   
-        margin: 0px auto !important;
-    }
-    .figure{
-        min-width: 90%;
-        margin: 0 5% !important;
-    }
-}
-.cardtitle li, .tech-wrapper, .contact-wrapper, .figure-content{
+.figure li, 
+.content li,
+.tech-wrapper, 
+.contact-wrapper, 
+.figure-content{
     text-transform: none;
 }
 .head span.hidden{
     display: inline-block;
-    transform: translateY(25%);
-    font-size: 35px;
+    transform: translateY(19%);
+    font-size: 40px;
     overflow: hidden;
     max-width: 0;
     opacity: 0;
@@ -111,18 +125,21 @@ body {
     color: lightsteelblue;
 }
 .nav{
-    text-align: end;
     position: sticky;
     left: 55%;
     margin: 0 1%;
-    font-family: font;
     font-weight: 100;
+    font-family: font;
+    font-size: 17px;
 }
 a{
     color: lightsteelblue;
     text-decoration: none;
+    transition: 0.3s;
 }
-.head span, .footer, a:hover, .choice a:hover, .active{
+.head span, 
+.footer, 
+a:hover{
     color: brown;
 }
 .nav a{
@@ -133,112 +150,84 @@ a{
     max-width: 1em;
 }
 .back-content{
-    background-image: URL('/Pict/pozadi-uvod.jpg');   
+    background-image: URL('/Pict/pozadi-uvod.jpg'); 
 }
-.back, .back-content, .back-tech, .back-corp, .back-rd{
-    background-attachment: inherit;
+.back, 
+.back-content, 
+.back-tech, 
+.back-corp, 
+.back-rd{
     background-repeat: no-repeat; 
     background-size: cover;
-    min-height: 500px;
-    margin: 20px 0;
 }
-.shadow, .shadow-contact, .shadow-tech, .shadow-corp, .shadow-rd{
-    height: 500px;
+.shadow,  
+.shadow-tech, 
+.shadow-corp, 
+.shadow-rd,
+.shadow-contact{
+    height: 750px;
     width: 100%;
 }
-.shadow, .shadow-corp, .shadow-rd{
+.shadow, 
+.shadow-corp, 
+.shadow-rd{
     display: flex;
     align-items: center;
 }
 .shadow{
-    background-color: rgba(26, 46, 54, 0.8);
-}
-.contenttitle{
-    text-align: center;
-    font-size: 26px;
-    height: 10%;
-}
-.card-wrapper{
-    width: 500px; 
-}
-.card-wrapper, .tech-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-}
-.card{
-    flex: 1 1 auto;
-    background-color: rgba(176, 196, 222, 0.6);
-    color: rgb(26, 46, 54);
-    text-align: left;
-    max-width: 600px; 
-    min-width: 300px;
-}
-
-.cardmenu{
-    font-size: 24px;
-    margin: 15px 0px;
-    font-weight: 900;
-}
-.cardtitle{
-    margin: 0 5%;
-}
-.cardtitle li{
-    font-size: 17px;
-    margin-bottom: 15px;
-    font-weight: 900;
-    list-style-position: inside;
+    background-color: rgba(26, 46, 54, 0.85);
 }
 .choice{
-    font-size: 20px;
-    margin-bottom: 35px;
+    margin: 35px;
 }
 .choice a{
-    color: lightsteelblue;
-    background-color: rgb(26, 46, 54);
-    padding: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    color: rgb(26, 46, 54);
+    background-color:lightsteelblue ;
+    padding: 10px 15px;
     border-radius: 4px;
-    box-shadow: black 3px 3px 9px; 
+    box-shadow: black 4px 4px 10px; 
 }
-.back-wrapper{
-    position: relative;
-    display: contents;
+.choice a:hover{
+    background-color: brown;
 }
 .back{
     background-image: URL('/Pict/pozadi-kontakt.jpg'); 
 }
 .shadow-contact{
-    background-color: rgba(26, 46, 54, 0.6);
-    display: inline-block;
+    background-image: linear-gradient(rgba(26, 46, 54, 0.5), rgb(26, 46, 54));
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contact{
-    margin: 7% 12%;
-    display: grid;
+    display: inline-grid;
     background-color:rgba(26, 46, 54, 0.7); 
     width: fit-content;
+    height: fit-content;
 }
 .contact-title{
-    font-size: 27px;
-    margin: 10% 5% 5% 10%;
+    font-size: 30px;
+    margin: 10% 20% 5% 20%;
+    text-align: center;
 }
 .contact-wrapper{
     display: flex;
-    font-size: 17px;
-    margin: 0 10% 0 10%;
+    font-size: 19px;
+    margin: 0 20%;
 }
 .middle1 li,.middle2 li,.head li,.tech li{
     list-style-type: none;
 }
-.middle1 .middle2{
-    margin: 3%;
-}
 .middle1{
-    width: 115px;
+    width: 120px;
 }
 .middle2{
-    width: 200px;
+    width: 210px;
 }
 .contact a{
-    margin: 5% 10% 5% 10%;
+    margin: 7% 20%;
 }
 .back-tech{
     background-image: URL('/Pict/pozadi-tech.jpg'); 
@@ -247,20 +236,23 @@ a{
     background-color: rgba(26, 46, 54, 0.8);
     display: inline-table;
 }
-.rubric-title{
-    margin: 3% 5%;
-    font-size: 25px;
-    text-align: center;
+.tech-content{
+    margin-top: 8%;
+}
+.tech-title{
+    font-size: 27px;
+    margin: 5%;
 }
 .tech-wrapper{
     align-items: stretch;
     min-height: 130px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .tech{
     flex: 1 1 auto;
     position: relative;
     margin: 0 2%;
-    text-align: center;
     background-color: rgba(26, 46, 54, 0.7);
     width: 25%;
     font-size: 17px;
@@ -275,7 +267,7 @@ a{
     transform:scale(1.1);
 }
 .tech img, .contact img{
-    transition: transform 0.3s ease-out;
+    transition: transform 0.4s ease-out;
 }
 .back-corp{
     background-image: url(/Pict/pozadi-firmy.jpg);
@@ -289,7 +281,7 @@ a{
 .shadow-rd{
     background-color: rgba(26, 46, 54, 0.8);
 }
-.figure{
+.figure, .content{
     display: block;
     position: absolute;
     background-color: rgba(26, 46, 54, 0.8);
@@ -298,10 +290,9 @@ a{
 }
 .figure-title{
     font-size: 27px;
-    text-align: center;
-    margin: 2% 5%;
+    margin: 3% 5%;
 }
-.figure-content{
+.figure-content, .content ul{
     font-size: 19px;
     margin: 2% 5%;
 }
@@ -312,10 +303,3 @@ a{
     margin: 0 3%;
     font-size: 18px;
 }
-
-
-
-
-
-
-
