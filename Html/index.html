@@ -37,9 +37,14 @@
             <a href="#technologie">technologie</a>
             <a href="#kontakt">kontakt</a>
         </div>
+        <div class="hamburger" id="hamburger" onclick="toggleActive()">
+            <div class="line top"></div>
+            <div class="line middle"></div>
+            <div class="line bottom"></div>
         </div>
-        <div class="back-content">
-            <div class="shadow">
+        </div>
+        <div class="back main">
+            <div class="shadow intro">
                 <div class="content">
                     <div class="figure-title">měření a regulace</div>
                     <ul>
@@ -60,8 +65,8 @@
                 </div>
             </div>
         </div>
-        <div class="back-corp" id="firmy">
-            <div class="shadow-corp">
+        <div class="back corp" id="firmy">
+            <div class="shadow firm">
                 <div class="figure">
                     <div class="figure-title">činnosti pro firmy</div>
                     <div class="figure-content">
@@ -75,7 +80,7 @@
                                     <li class="event">tuhá paliva, uhelné, peletky, štěpky</li>
                                     <li class="event">tepelná čerpadla</li>
                                 </ul>
-                                </li>
+                            </li>
                             <li>větrání a odsávání
                                 <ul>
                                     <li class="event">komplexní řešení MaR VZT v součinnosti se zdroji tepla i chladu</li>
@@ -100,8 +105,8 @@
                 </div>
             </div>
         </div>
-        <div class="back-rd" id="rd">
-            <div class="shadow-rd">
+        <div class="back home" id="rd">
+            <div class="shadow house">
                 <div class="figure">
                     <div class="figure-title">činnosti pro rodinné domy</div>
                     <div class="figure-content">
@@ -122,56 +127,59 @@
                 </div>
             </div>
         </div>
-        <div class="back-tech" id="technologie">
-            <div class="shadow-tech">
+        <div class="back koop" id="technologie">
+            <div class="shadow technic">
                 <div class="tech-content">
-                <div class="tech-title">dodavatelé volně programovatelných řídících jednotek a regulátorů</div>
-                <div class="tech-wrapper">
-                    <div class="tech">
-                        <ul>
-                            <li><a href="https://amitomation.cz/" target="_blank"><img src="/Pict/logo/amit.png"></a></li>
-                            <li>největší český výrobce řídicích systémů a elektroniky pro průmyslovou automatizaci</li>
-                        </ul>
+                    <div class="tech-title">dodavatelé volně programovatelných řídících jednotek a regulátorů</div>
+                    <div class="tech-wrapper">
+                        <div class="tech">
+                            <ul>
+                                <li><a href="https://amitomation.cz/" target="_blank"><img src="/Pict/logo/amit.png"></a></li>
+                                <li>největší český výrobce řídicích systémů a elektroniky pro průmyslovou automatizaci</li>
+                            </ul>
+                        </div>
+                        <div class="tech">
+                            <ul>
+                                <li><a href="https://www.wago.com/cz/" target="_blank"><img src="/Pict/logo/wago.png"></a></li>
+                                <li>spolehlivé přístroje od světoznámé a zavedené firmy, určené pro střední a velké aplikace</li>
+                            </ul>
+                        </div>
+                        <div class="tech">
+                            <ul>
+                                <li><a href="https://www.weintek.cz/" target="_blank"><img src="/Pict/logo/weintek.png"></a></li>
+                                <li>výrobce spolehlivých a odolných ovládacích panelů (touchscreenů)</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="tech">
-                        <ul>
-                            <li><a href="https://www.wago.com/cz/" target="_blank"><img src="/Pict/logo/wago.png"></a></li>
-                            <li>spolehlivé přístroje od světoznámé a zavedené firmy, určené pro střední a velké aplikace</li>
-                        </ul>
+                    <div class="tech-title">používané programy pro tvorbu vizualizací a dispečinků</div>
+                    <div class="tech-wrapper">
+                        <div class="tech">
+                            <ul>
+                                <li><a href="https://www.controlweb.co.nz/" target="_blank"><img src="/Pict/logo/controlweb.png"></a></li>
+                                <li>průmyslová automatizace a řídící řešení</li>
+                            </ul>
+                        </div>
+                        <div class="tech">
+                            <ul>
+                                <li><a href="https://www.promotic.eu/cz/index.htm" target="_blank"><img src="/Pict/logo/promotic.png"></a></li>
+                                <li>vizualizace technologických procesů</li>
+                            </ul>
+                        </div>
+                        <div class="tech">
+                            <ul>
+                                <li><a href="https://www.autocont.cz" target="_blank"><img src="/Pict/logo/autocont.png"></a></li>
+                                <li>programování systému a touchscreenů</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="tech">
-                        <ul>
-                            <li><a href="https://www.weintek.cz/" target="_blank"><img src="/Pict/logo/weintek.png"></a></li>
-                            <li>výrobce spolehlivých a odolných ovládacích panelů (touchscreenů)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tech-title">používané programy pro tvorbu vizualizací a dispečinků</div>
-                <div class="tech-wrapper">
-                    <div class="tech">
-                        <ul>
-                            <li><a href="https://www.controlweb.co.nz/" target="_blank"><img src="/Pict/logo/controlweb.png"></a></li>
-                            <li>průmyslová automatizace a řídící řešení</li>
-                        </ul>
-                    </div>
-                    <div class="tech">
-                        <ul>
-                            <li><a href="https://www.promotic.eu/cz/index.htm" target="_blank"><img src="/Pict/logo/promotic.png"></a></li>
-                            <li>vizualizace technologických procesů</li>
-                        </ul>
-                    </div>
-                    <div class="tech">
-                        <ul>
-                            <li><a href="https://www.autocont.cz" target="_blank"><img src="/Pict/logo/autocont.png"></a></li>
-                            <li>programování systému a touchscreenů</li>
-                        </ul>
-                    </div>
-                </div>
+                    <a href="https://cz.linkedin.com/in/daniel-medek-770281114" target="_blank">
+                        <img src="/Pict/logo/linkedin-logo.png">
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="back" id="kontakt">
-            <div class="shadow-contact">
+        <div class="back cont" id="kontakt">
+            <div class="shadow call">
                 <div class="contact">
                     <div class="contact-title">kontakt</div>
                     <div class="contact-wrapper">

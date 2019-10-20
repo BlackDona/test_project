@@ -87,6 +87,46 @@ body {
     font-weight: 100;
     font-family: font;
 }
+
+
+.hamburger{
+    display:block;
+    width:50px;
+    height:50px;
+    border-radius:5px;
+    border: 2px solid black;
+  }
+  .line{
+    display:block;
+    width:40px;
+    border: 2px solid black;
+    border-radius: 2px;
+    height:1px;
+    position:relative;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transition: .25s;
+  }
+  .top{
+    top:10px;
+  }
+  .middle{
+    top:20px;
+  }
+  .bottom{
+    top:30px;
+  }
+  .hamburger.active .top{
+    transform:translate(-50%,12.5px) rotate(45deg);
+  }
+  .hamburger.active .middle{
+    display:none;
+  }
+  .hamburger.active .bottom{
+    transform:translate(-50%,-12.5px) rotate(-45deg);
+  }
+
+  
 .footer {
     position: relative;
     font-size: 13px;
@@ -149,33 +189,54 @@ a:hover{
     opacity: 1;
     max-width: 1em;
 }
-.back-content{
-    background-image: URL('/Pict/pozadi-uvod.jpg'); 
-}
-.back, 
-.back-content, 
-.back-tech, 
-.back-corp, 
-.back-rd{
+
+.back{
     background-repeat: no-repeat; 
     background-size: cover;
 }
-.shadow,  
-.shadow-tech, 
-.shadow-corp, 
-.shadow-rd,
-.shadow-contact{
+.main{
+    background-image: URL('/Pict/pozadi-uvod.jpg'); 
+}
+.koop{
+    background-image: URL('/Pict/pozadi-tech.jpg'); 
+}
+.corp{
+    background-image: url(/Pict/pozadi-firmy.jpg);
+}
+.home{
+    background-image: url(/Pict/pozadi-rd.jpg);
+}
+.cont{
+    background-image: URL('/Pict/pozadi-kontakt.jpg'); 
+}
+.shadow{
     height: 750px;
     width: 100%;
 }
-.shadow, 
-.shadow-corp, 
-.shadow-rd{
+.intro, 
+.firm, 
+.house{
     display: flex;
     align-items: center;
 }
-.shadow{
+.intro{
     background-color: rgba(26, 46, 54, 0.85);
+}
+.call{
+    background-image: linear-gradient(rgba(26, 46, 54, 0.5), rgb(26, 46, 54));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.technic{
+    background-color: rgba(26, 46, 54, 0.8);
+    display: inline-table;
+}
+.firm{
+    background-color: rgba(26, 46, 54, 0.5);
+}
+.house{
+    background-color: rgba(26, 46, 54, 0.8);
 }
 .choice{
     margin: 35px;
@@ -191,15 +252,6 @@ a:hover{
 }
 .choice a:hover{
     background-color: brown;
-}
-.back{
-    background-image: URL('/Pict/pozadi-kontakt.jpg'); 
-}
-.shadow-contact{
-    background-image: linear-gradient(rgba(26, 46, 54, 0.5), rgb(26, 46, 54));
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .contact{
     display: inline-grid;
@@ -228,13 +280,6 @@ a:hover{
 }
 .contact a{
     margin: 7% 20%;
-}
-.back-tech{
-    background-image: URL('/Pict/pozadi-tech.jpg'); 
-}
-.shadow-tech{
-    background-color: rgba(26, 46, 54, 0.8);
-    display: inline-table;
 }
 .tech-content{
     margin-top: 8%;
@@ -268,18 +313,6 @@ a:hover{
 }
 .tech img, .contact img{
     transition: transform 0.4s ease-out;
-}
-.back-corp{
-    background-image: url(/Pict/pozadi-firmy.jpg);
-}
-.shadow-corp{
-    background-color: rgba(26, 46, 54, 0.5);
-}
-.back-rd{
-    background-image: url(/Pict/pozadi-rd.jpg);
-}
-.shadow-rd{
-    background-color: rgba(26, 46, 54, 0.8);
 }
 .figure, .content{
     display: block;
