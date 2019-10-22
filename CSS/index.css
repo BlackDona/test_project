@@ -14,13 +14,45 @@
     font-family: fonttext;
     src: url(/Fonts/galette.otf)
 }
+@media only screen and (max-width: 730px){
+    .wrapper { 
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    .nav {
+        display: none;
+    }
+    .hamburger{
+        display: block !important;
+    }
+    .nav.active{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        background: rgb(26, 46, 54);
+        top: 0;
+        text-align: center;
+        line-height: normal;
+        margin: 80px 0 !important;
+    }
+    .sum.active{
+        display: none;
+    }
+    .nav.active a{
+        margin: 5vh;
+    }
+    .header{
+        width: 100% !important;
+    }
+}
 @media only screen and (max-width: 1090px){
     .head{
         margin: 5px;
     }
     .nav{
         left: 0 !important;
-        margin: 0 !important;
+        margin: 10px !important;
     }
     .tech-wrapper{
         display: block !important;
@@ -38,12 +70,7 @@
         font-size: 17px !important;
     }
 }
-@media only screen and (max-width: 675px){
-    .wrapper { 
-        margin: 0;
-        width: 100%;
-    }
-}
+
 html, body{
     height: 100%;
 }
@@ -65,15 +92,19 @@ body {
 }
 .header {
     display: flex;
-    align-items: baseline;
     flex-wrap: wrap; 
-    margin: 0 0 15px 15px;
+    position: fixed;
+    width: 90%;
+    z-index: 1111;
+    background-color: rgb(26, 46, 54);
 }
 .head{
+    float: left;
+    position: sticky;
     font-size: 0;
     font-weight: 900;
-    text-align: left;
     width: 300px;
+    margin: 0 0 15px 15px;
 }
 .head span{
     font-size: 50px; 
@@ -87,63 +118,70 @@ body {
     font-weight: 100;
     font-family: font;
 }
-
-
 .hamburger{
-    display:block;
+    cursor: pointer;
+    display:none;
     width:50px;
     height:50px;
     border-radius:5px;
-    border: 2px solid black;
-  }
-  .line{
+    border: 2px solid lightsteelblue;
+    position: sticky;
+    left: 89%;
+    margin: 10px;
+    float: right;
+}
+.line{
     display:block;
     width:40px;
-    border: 2px solid black;
+    background-color: lightsteelblue;
+    border: 2px solid lightsteelblue;
     border-radius: 2px;
     height:1px;
     position:relative;
     left:50%;
     transform:translate(-50%,-50%);
-    transition: .25s;
-  }
-  .top{
+    transition: 0.25s;
+}
+.top{
     top:10px;
-  }
-  .middle{
+}
+.middle{
     top:20px;
-  }
-  .bottom{
+}
+.bottom{
     top:30px;
-  }
-  .hamburger.active .top{
+}
+.hamburger.active .top{
     transform:translate(-50%,12.5px) rotate(45deg);
-  }
-  .hamburger.active .middle{
+}
+.hamburger.active .middle{
     display:none;
-  }
-  .hamburger.active .bottom{
+}
+.hamburger.active .bottom{
     transform:translate(-50%,-12.5px) rotate(-45deg);
-  }
+} 
 
-  
 .footer {
-    position: relative;
+    position: absolute;
     font-size: 13px;
     font-family: font;
     background-color: rgb(26, 46, 54);
     margin: 15px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .content li{
     list-style-position: inside;
     margin-bottom: 15px;
 }
-.footer,
+
 .content ul,
 .tech,
 .figure-title,
 .tech-title,
-.choice{
+.choice,
+.contact-title{
     text-align: center;
 }
 
@@ -167,7 +205,7 @@ body {
 .nav{
     position: sticky;
     left: 55%;
-    margin: 0 1%;
+    margin: 30px 10px;
     font-weight: 100;
     font-family: font;
     font-size: 17px;
@@ -215,7 +253,8 @@ a:hover{
 }
 .intro, 
 .firm, 
-.house{
+.house,
+.call{
     display: flex;
     align-items: center;
 }
@@ -224,8 +263,6 @@ a:hover{
 }
 .call{
     background-image: linear-gradient(rgba(26, 46, 54, 0.5), rgb(26, 46, 54));
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 .technic{
@@ -262,7 +299,6 @@ a:hover{
 .contact-title{
     font-size: 30px;
     margin: 10% 20% 5% 20%;
-    text-align: center;
 }
 .contact-wrapper{
     display: flex;
