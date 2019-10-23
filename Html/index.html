@@ -14,7 +14,7 @@
     <div class="wrapper">
         <div class="header">
         <div class="head">
-            <a href="#index"> 
+            <a onclick="roll('index')"> 
                 <div class="head1">
                         <span>d</span>
                         <span class="hidden">a</span>
@@ -31,12 +31,12 @@
                     <div class="head2">měření a regulace</div>
              </a>    
         </div>
-        <div class="nav" id="nav" onclick="toggleDeactive()">
-            <a href="#firmy">pro firmy</a>
-            <a href="#rd">pro rodinné domy</a>
-            <a href="#reference">reference</a>
-            <a href="#technologie">technologie</a>
-            <a href="#kontakt">kontakt</a>
+        <div class="nav" id="nav">
+            <a onclick="roll('firmy')">pro firmy</a>
+            <a onclick="roll('rd')">pro rodinné domy</a>
+            <!-- <a onclick="roll('reference')">reference</a> -->
+            <a onclick="roll('technologie')">technologie</a>
+            <a onclick="roll('kontakt')">kontakt</a>
         </div>
         <div class="hamburger" id="hamburger" onclick="toggleActive()">
             <div class="line top"></div>
@@ -59,10 +59,10 @@
                     </ul>
                     <div class="figure-title">konkrétní služby</div>
                     <div class="choice">
-                        <a href="#firmy">pro firmy</a>
+                        <a onclick="roll('firmy')">pro firmy</a>
                     </div>
                     <div class="choice">
-                        <a href="#rd">pro rodinné domy</a>
+                        <a onclick="roll('rd')">pro rodinné domy</a>
                     </div>
                 </div>
             </div>
