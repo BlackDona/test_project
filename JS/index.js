@@ -51,5 +51,5 @@ function highlightMenuItem(menuItemId, elementId, className){
 
   function checkElementInView (elementId) {
     var elementTarget = document.getElementById(elementId);
-    return window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight);
+    return window.scrollY > (elementTarget.offsetTop - 10);// + elementTarget.offsetHeight);
   }
