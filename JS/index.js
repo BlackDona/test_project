@@ -18,7 +18,7 @@ window.onscroll = function() { //při scrollování stránky se provedou funkce:
     checkSticky("active");
     highlightMenuItem("n1","firmy","highlight");
     highlightMenuItem("n2","rd","highlight");
-    //highlightMenuItem("n3","reference","highlight");
+    highlightMenuItem("n3","reference","highlight");
     highlightMenuItem("n4","technologie","highlight");
     highlightMenuItem("n5","kontakt","highlight");
 }
