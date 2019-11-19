@@ -18,7 +18,7 @@ window.onscroll = function() { //při scrollování stránky se provedou funkce:
     checkSticky("active");
     highlightMenuItem("n1","firmy","highlight");
     highlightMenuItem("n2","rd","highlight");
-    //highlightMenuItem("n3","reference","highlight");
+    highlightMenuItem("n3","reference","highlight");
     highlightMenuItem("n4","technologie","highlight");
     highlightMenuItem("n5","kontakt","highlight");
 }
@@ -51,5 +51,5 @@ function highlightMenuItem(menuItemId, elementId, className){
 
   function checkElementInView (elementId) {
     var elementTarget = document.getElementById(elementId);
-    return window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight);
+    return window.scrollY > (elementTarget.offsetTop - 10);// + elementTarget.offsetHeight);
   }

@@ -219,10 +219,16 @@ a:hover .lineup{
 .figure-title,
 .tech-title,
 .choice,
-.contact-title{
+.contact-title,
+.ref-title{
     text-align: center;
 }
-
+.figure-title,
+.tech-title,
+.contact-title,
+.ref-title{
+    font-size: 30px;
+}
 .figure li, 
 .content li,
 .tech-wrapper, 
@@ -294,9 +300,35 @@ a.highlight{
 .intro, 
 .firm, 
 .house,
-.call{
+.call,
+.back-ref{
     display: flex;
     align-items: center;
+}
+.reference{
+    padding: 60px 30px;
+    min-height: 350px;
+}
+.ref-title{
+    margin: 3%;
+}
+.back-ref{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ref{
+    width: 140px;
+    text-align: center;
+    height: 170px;
+}
+.ref li{
+    margin: 10px;
+}
+.ref:hover img{
+    transform:scale(0.8);
+}
+.ref:hover a{
+    color: lightsteelblue;
 }
 .intro{
     background-color: rgba(26, 46, 54, 0.85);
@@ -337,7 +369,6 @@ a.highlight{
     height: fit-content;
 }
 .contact-title{
-    font-size: 30px;
     margin: 10% 20% 5% 20%;
 }
 .contact-wrapper{
@@ -345,7 +376,11 @@ a.highlight{
     font-size: 19px;
     margin: 0 20%;
 }
-.middle1 li,.middle2 li,.head li,.tech li{
+.middle1 li,
+.middle2 li,
+.head li,
+.tech li,
+.ref li{
     list-style-type: none;
 }
 .middle1{
@@ -361,7 +396,6 @@ a.highlight{
     margin-top: 8%;
 }
 .tech-title{
-    font-size: 27px;
     margin: 5%;
 }
 .tech-wrapper{
@@ -387,7 +421,7 @@ a.highlight{
 .tech img:hover, .contact img:hover{
     transform:scale(1.1);
 }
-.tech img, .contact img{
+.tech img, .contact img, .ref img{
     transition: transform 0.4s ease-out;
 }
 .figure, .content{
@@ -398,7 +432,6 @@ a.highlight{
     width: 68%;
 }
 .figure-title{
-    font-size: 27px;
     margin: 3% 5%;
 }
 .figure-content, .content ul{

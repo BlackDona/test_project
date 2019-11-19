@@ -1,4 +1,0 @@
-
-5) další odkaz v menu "reference"
-6) v odkazu reference pøidat tlaèítka na další možnosti (bazénové technologie, VZT, øešení chytrých domù, ...) pod kterými 
-budou konkrétní projekty (myslet na to, že se reference budou rozšiøovat!)
