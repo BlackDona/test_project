@@ -20,22 +20,23 @@
         width: 100% !important;
     }
     .nav {
-        display: none;
+        display: none !important;
     }
     .hamburger{
         display: block !important;
     }
     .nav.active{
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         position: fixed;
         width: 100%;
         background: rgb(26, 46, 54);
         top: 0;
         text-align: center;
-        line-height: 10vh;
+        line-height: 12vh;
         margin: 80px 0 !important;
         height: calc(100% - 160px);
+        font-size: 15px;
     }
     .sum.active{
         display: none;
@@ -45,6 +46,71 @@
     }
     .header{
         width: 100% !important;
+        height: 60px;
+    }
+    .head span{
+        font-size: 40px !important;
+    }
+    .head span.hidden{
+        font-size: 30px !important;
+    }
+    .footer{
+        font-size: 10px !important;
+    }
+    .figure-title,
+    .tech-title,
+    .contact-title,
+    .ref-title{
+        font-size: 20px !important;
+    }
+    .figure-content, 
+    .content ul, 
+    .contact-wrapper,
+    .tech{
+        font-size: 15px !important;
+    }
+    .event{
+        font-size: 14px !important;
+    }
+    .ref{
+        font-size: 14px !important;
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .shadow{
+        height: 550px !important;
+    }
+    .middle1 {
+        width: 60px !important;
+    }
+    .middle2 {
+        width: 162px !important;
+    }
+    .choice{
+        margin: 20px !important;
+    }
+    .choice a{
+        padding: 7px 10px !important;
+        font-size: 15px !important; 
+    }
+    .ref img, .contact img{
+        width: 50%;
+        height: auto;
+    }
+    .head1{
+        height: 40px !important;
+    }
+    .head2{
+        font-size: 13px !important;
+    }
+    .head{
+        width: 240px !important;
+    }
+    .tech{
+        width: 300px !important;
+    }
+    .ref-menu{
+        display: none !important;
     }
 }
 @media only screen and (max-width: 1090px){
@@ -59,16 +125,19 @@
         display: block !important;
     }
     .tech{
-        min-width: 425px;
+        max-width: 425px;
         min-height: 110px;   
         margin: 0px auto !important;
+        width: auto !important;
     }
     .figure, .content{
         min-width: 90%;
         margin: 0 5% !important;
     }
-    .figure-content, .content ul, .contact-wrapper {
-        font-size: 17px !important;
+    .ref-menu{
+        right: unset !important;
+        left: 250px;
+        top: 110px !important;
     }
 }
 
@@ -122,8 +191,8 @@ body {
 .hamburger{
     cursor: pointer;
     display:none;
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
     border-radius:5px;
     border: 2px solid lightsteelblue;
     position: sticky;
@@ -133,9 +202,9 @@ body {
 }
 .line{
     display:block;
-    width:40px;
+    width:30px;
     background-color: lightsteelblue;
-    border: 2px solid lightsteelblue;
+    border: 1px solid lightsteelblue;
     border-radius: 2px;
     height:1px;
     position:relative;
@@ -144,22 +213,22 @@ body {
     transition: 0.25s;
 }
 .top{
-    top:10px;
+    top:7px;
 }
 .middle{
-    top:20px;
+    top:17px;
 }
 .bottom{
-    top:30px;
+    top:27px;
 }
 .hamburger.active .top{
-    transform:translate(-50%,12.5px) rotate(45deg);
+    transform:translate(-50%,11.5px) rotate(45deg);
 }
 .hamburger.active .middle{
     display:none;
 }
 .hamburger.active .bottom{
-    transform:translate(-50%,-12.5px) rotate(-45deg);
+    transform:translate(-50%,-11.5px) rotate(-45deg);
 } 
 .up{
     position: sticky;
@@ -247,6 +316,7 @@ a:hover .lineup{
     color: lightsteelblue;
 }
 .nav{
+    display: flex;
     position: sticky;
     left: 55%;
     margin: 30px 10px;
@@ -257,7 +327,7 @@ a:hover .lineup{
 a{
     color: lightsteelblue;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.4s;
     cursor: pointer;
 }
 .head span, 
@@ -330,6 +400,30 @@ a.highlight{
 .ref:hover a{
     color: lightsteelblue;
 }
+.n3:hover .ref-menu{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+} 
+.ref-menu{
+    padding: 25px 5px 5px 5px;
+    background-color: rgb(26, 46, 54);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: font;
+    justify-content: center;
+    align-items: center;
+    right: 200px;
+    top: 55px;
+    z-index: 11111;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.6s;
+}
+.ref-menu a{
+    margin: 4px 0px;
+}
 .intro{
     background-color: rgba(26, 46, 54, 0.85);
 }
@@ -349,6 +443,7 @@ a.highlight{
 }
 .choice{
     margin: 35px;
+    transition: transform 0.4s;
 }
 .choice a{
     font-size: 22px;
@@ -365,15 +460,13 @@ a.highlight{
 .contact{
     display: inline-grid;
     background-color:rgba(26, 46, 54, 0.7); 
-    width: fit-content;
-    height: fit-content;
 }
 .contact-title{
     margin: 10% 20% 5% 20%;
 }
 .contact-wrapper{
     display: flex;
-    font-size: 19px;
+    font-size: 18px;
     margin: 0 20%;
 }
 .middle1 li,

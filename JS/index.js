@@ -16,11 +16,11 @@ function roll(elementId){ //funkce pro plynulé rolování stránky ke konkrétn
 
 window.onscroll = function() { //při scrollování stránky se provedou funkce:
     checkSticky("active");
-    highlightMenuItem("n1","firmy","highlight");
+/*     highlightMenuItem("n1","firmy","highlight");
     highlightMenuItem("n2","rd","highlight");
     highlightMenuItem("n3","reference","highlight");
     highlightMenuItem("n4","technologie","highlight");
-    highlightMenuItem("n5","kontakt","highlight");
+    highlightMenuItem("n5","kontakt","highlight"); */
 }
 
 function checkSticky(className){ //definice funkce checkSticky
@@ -35,7 +35,7 @@ function checkSticky(className){ //definice funkce checkSticky
       }
   }
 
-function highlightMenuItem(menuItemId, elementId, className){
+/* function highlightMenuItem(menuItemId, elementId, className){
     var cl = document.getElementById(menuItemId).classList;
     if(checkElementInView(elementId)){
       if(!cl.contains(className)){
@@ -52,4 +52,4 @@ function highlightMenuItem(menuItemId, elementId, className){
   function checkElementInView (elementId) {
     var elementTarget = document.getElementById(elementId);
     return window.scrollY > (elementTarget.offsetTop - 10);// + elementTarget.offsetHeight);
-  }
+  } */
