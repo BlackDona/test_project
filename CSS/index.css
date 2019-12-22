@@ -22,8 +22,8 @@
     .nav {
         display: none !important;
     }
-    .nav-ref{
-        font-size: 14px !important;
+    .n2 a{
+        display: none !important;
     }
     .hamburger{
         display: block !important;
@@ -40,6 +40,19 @@
         margin: 80px 0 !important;
         height: calc(100% - 160px);
         font-size: 15px;
+    }
+    .ref-menu1.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        top: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 8vh;
+        margin: 80px 0 0 0 !important;
+        font-size: 15px;
+        transition: none;
+    }
+    .ref-menu{
+        display: none !important;
     }
     .sum.active{
         display: none;
@@ -99,7 +112,7 @@
         font-size: 15px !important; 
     }
     .ref img, .contact img{
-        width: 50%;
+        width: 60%;
         height: auto;
     }
     .head1{
@@ -114,15 +127,21 @@
     .tech{
         width: 300px !important;
     }
-    .ref-menu{
-        display: none !important;
+    .contact-title {
+        margin: 10% 10% 5% 10% !important;
+    }
+    .contact-wrapper {
+        margin: 0 10% !important;
+    }
+    .nav1{
+        font-size: 15px !important;
     }
 }
 @media only screen and (max-width: 1090px){
     .head{
         margin: 5px;
     }
-    .nav{
+    .nav, .nav1{
         margin: 10px !important;
     }
     .tech-wrapper{
@@ -139,8 +158,6 @@
         margin: 0 5% !important;
     }
     .ref-menu{
-        right: unset !important;
-        left: 250px;
         top: 110px !important;
     }
 }
@@ -320,13 +337,14 @@ a:hover .lineup{
     transition: 0.5s ease-in;
     color: lightsteelblue;
 }
-.nav, .nav-ref{
+.nav, .nav1{
     display: flex;
     position: sticky;
-    margin: 30px 10px;
+    margin: 25px 10px;
     font-weight: 100;
     font-family: font;
     font-size: 17px;
+    align-items: center;
 }
 a{
     color: lightsteelblue;
@@ -340,8 +358,10 @@ a:hover,
 a.highlight{
     color: brown;
 }
-.nav a{
-    margin: 0 5px;
+.n{
+    margin: 0 8px;
+    max-width: 166px;
+    text-align: center;
 }
 .head:hover .hidden{
     opacity: 1;
@@ -404,10 +424,16 @@ a.highlight{
 .ref:hover a{
     color: lightsteelblue;
 }
-.n3:hover .ref-menu{
+.n3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.n3:hover .ref-menu, .n3:hover .ref-menu1{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 } 
-.ref-menu{
+.ref-menu, .ref-menu1{
     padding: 25px 5px 5px 5px;
     background-color: rgb(26, 46, 54);
     position: fixed;
@@ -419,13 +445,12 @@ a.highlight{
     font-family: font;
     justify-content: center;
     align-items: center;
-    right: 200px;
     top: 55px;
     z-index: 11111;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: 0.6s;
 }
-.ref-menu a{
+.ref-menu a, .ref-menu1 a{
     margin: 4px 0px;
 }
 .intro{
