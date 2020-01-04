@@ -22,9 +22,6 @@
     .nav {
         display: none !important;
     }
-    .n2 a{
-        display: none !important;
-    }
     .hamburger{
         display: block !important;
     }
@@ -41,28 +38,14 @@
         height: calc(100% - 160px);
         font-size: 15px;
     }
-    .ref-menu1.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        top: 0;
-        width: 100%;
-        text-align: center;
-        line-height: 8vh;
-        margin: 80px 0 0 0 !important;
-        font-size: 15px;
-        transition: none;
-    }
-    .ref-menu{
-        display: none !important;
-    }
     .sum.active{
         display: none;
     }
-    .nav.active a{
+    .nav.active a, .hidden-menu.active a{
         flex: 1 1 auto;
     }
     .header{
         width: 100% !important;
-        height: 60px;
     }
     .head span{
         font-size: 40px !important;
@@ -134,7 +117,25 @@
         margin: 0 10% !important;
     }
     .nav1{
-        font-size: 15px !important;
+        display: none !important;
+    }
+    .hidden-menu.active {
+        display: flex !important;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        background: rgb(26, 46, 54);
+        top: 0;
+        text-align: center;
+        line-height: 9vh;
+        margin: 80px 0;
+        height: calc(100% - 160px);
+        font-size: 15px;
+        font-weight: 100;
+        font-family: font;
+    }
+    .contact{
+        width: auto !important;
     }
 }
 @media only screen and (max-width: 1090px){
@@ -159,6 +160,10 @@
     }
     .ref-menu{
         top: 110px !important;
+    }
+    .footer{
+        display: flex;
+        position: relative !important;
     }
 }
 
@@ -195,7 +200,6 @@ body {
     position: sticky;
     font-size: 0;
     font-weight: 900;
-    width: 300px;
     margin: 0 0 15px 15px;
 }
 .head span{
@@ -489,6 +493,7 @@ a.highlight{
 .contact{
     display: inline-grid;
     background-color:rgba(26, 46, 54, 0.7); 
+    width: 500px;
 }
 .contact-title{
     margin: 10% 20% 5% 20%;
@@ -590,4 +595,7 @@ a.highlight{
     text-align: center;
     text-transform: none;
     margin: 1% 0;
+}
+.hidden-menu{
+    display: none;
 }
